@@ -1,0 +1,28 @@
+{
+  "version": "0.4.0",
+  "configured_in_editor": false,
+  "input_defaults": {
+    "input_type": "Creative Input Action",
+    "registered_player_behavior": "Require Registered",
+    "consume_input": true
+  },
+  "input_devices": [
+    {"field": "Shoot", "custom_input": 1, "axis_direction": null},
+    {"field": "AimModifier", "custom_input": 2, "axis_direction": null},
+    {"field": "Check", "custom_input": 3, "axis_direction": null},
+    {"field": "QuickShot", "custom_input": 4, "axis_direction": null},
+    {"field": "Sprint", "custom_input": 5, "axis_direction": null},
+    {"field": "Pass", "custom_input": 6, "axis_direction": null},
+    {"field": "MoveForward", "custom_input": 7, "axis_direction": "Positive"},
+    {"field": "MoveBack", "custom_input": 7, "axis_direction": "Negative"},
+    {"field": "MoveLeft", "custom_input": 8, "axis_direction": "Negative"},
+    {"field": "MoveRight", "custom_input": 8, "axis_direction": "Positive"},
+    {"field": "CameraCycle", "custom_input": 9, "axis_direction": null},
+    {"field": "MenuInput", "custom_input": 10, "axis_direction": null},
+    {"field": "Switch", "custom_input": 11, "axis_direction": null},
+    {"field": "ResetInput", "custom_input": 12, "axis_direction": null}
+  ],
+  "camera_type": "gameplay_camera_fixed_point_device",
+  "look_at_target": false,
+  "source_slice_human_players": 1
+}

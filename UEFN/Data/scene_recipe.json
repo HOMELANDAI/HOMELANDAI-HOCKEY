@@ -1,0 +1,32 @@
+{
+  "title": "ICE HOCKEY LAKE: FROZEN PAWS EDITION",
+  "studio": "HomelandAI Studios",
+  "version": "0.4.0",
+  "editor_project_included": false,
+  "island_human_player_limit": 1,
+  "runtime_athletes_per_team": 6,
+  "home_lineup": [0, 4, 3, 2, 5, 1],
+  "away_lineup": [6, 12, 7, 13, 9, 11],
+  "slot_order": ["C", "LW", "RW", "LD", "RD", "G"],
+  "required_placed_devices": {
+    "fp_hockey_device": 1,
+    "player_spawner_device": 1,
+    "button_device": 1,
+    "hud_message_device": 1,
+    "gameplay_camera_fixed_point_device": 3,
+    "gameplay_controls_third_person_device": 1,
+    "input_trigger_device": 14
+  },
+  "rink_origin_cm": [0, 0, 100],
+  "required_asset_array_sizes": {
+    "HomeAssets": 15,
+    "AwayAssets": 15,
+    "ArenaAssets": 1,
+    "PuckAssets": 1,
+    "AimAssets": 1
+  },
+  "optional_asset_array_sizes": {
+    "HomeAlternateAssets": 15,
+    "AwayAlternateAssets": 15
+  }
+}

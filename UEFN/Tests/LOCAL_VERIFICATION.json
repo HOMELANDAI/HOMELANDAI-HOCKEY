@@ -1,0 +1,26 @@
+{
+  "product": "ICE HOCKEY LAKE: FROZEN PAWS EDITION",
+  "version": "0.4.0",
+  "scope": "Local source/geometry integrity and installer tests only; not a Verse compiler or Fortnite execution.",
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "authored_editor_expectations": 33,
+  "verse_compile": "NOT RUN",
+  "verse_logic_test_execution": "NOT RUN",
+  "uefn_asset_import": "NOT RUN",
+  "fortnite_session": "NOT RUN",
+  "local_editor_access": "NOT AVAILABLE",
+  "published_island": false,
+  "verse_sha256": {
+    "Verse/fp_hockey_device.verse": "d1fa02a6283bc62682b794159ea59433490277aa50716b653be7ab9ff83adc83",
+    "Verse/fp_logic_tests.verse": "adf243bd8dea8a1ccf82477e7831eb8fd09219673fab003453803d4be933eb97",
+    "Verse/fp_menu.verse": "8da3fc783e73c91d816f310fb56d502d76366c5b589199c3bbada06f2e459195",
+    "Verse/fp_roster.verse": "e2af573cfbc8769886434c34f56058d74dc45003a142fc44a0a644e244cc5e92",
+    "Verse/fp_simulation.verse": "e483a6835296529cc72a7c4671acc888cd8a8b964a6ba27a5e8e0ef0a179bfa6",
+    "Verse/fp_types.verse": "25e8da48ecdf22cb07af75e9c7dfd13cf514cd202a2e944b1843dc7d46afac61"
+  },
+  "test_output": "test_apply_and_idempotence (__main__.InstallerTests.test_apply_and_idempotence) ... ok\ntest_conflicting_source_requires_replace_and_backs_up (__main__.InstallerTests.test_conflicting_source_requires_replace_and_backs_up) ... ok\ntest_dry_run_does_not_write (__main__.InstallerTests.test_dry_run_does_not_write) ... ok\ntest_duplicate_module_rejected (__main__.InstallerTests.test_duplicate_module_rejected) ... ok\ntest_missing_project_descriptor_rejected (__main__.InstallerTests.test_missing_project_descriptor_rejected) ... ok\ntest_wrong_folder_rejected (__main__.InstallerTests.test_wrong_folder_rejected) ... ok\ntest_bindings_have_handlers_and_all_input_actions (__main__.SourceTests.test_bindings_have_handlers_and_all_input_actions) ... ok\ntest_canonical_roster_and_attributes_preserved (__main__.SourceTests.test_canonical_roster_and_attributes_preserved) ... ok\ntest_delimiters_no_placeholder_code (__main__.SourceTests.test_delimiters_no_placeholder_code) ... ok\ntest_exported_geometry_integrity (__main__.SourceTests.test_exported_geometry_integrity) ... ok\ntest_lineups_and_modes (__main__.SourceTests.test_lineups_and_modes) ... ok\ntest_shot_lifecycle_guards_present (__main__.SourceTests.test_shot_lifecycle_guards_present) ... ok\ntest_six_verse_files_and_device (__main__.SourceTests.test_six_verse_files_and_device) ... ok\ntest_spawn_cleanup_and_menu_guards (__main__.SourceTests.test_spawn_cleanup_and_menu_guards) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.421s\n\nOK\n"
+}

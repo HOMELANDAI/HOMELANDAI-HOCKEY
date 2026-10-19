@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICE HOCKEY LAKE: FROZEN PAWS EDITION | HomelandAI Studios</title>
+<style>body{background:#071923;color:#eef5f6;font:16px/1.6 Arial,sans-serif;max-width:760px;padding:48px 24px;margin:auto}h1{color:#f1c582;font-size:30px}code{color:#8fcde0}pre{white-space:pre-wrap}a{color:#8fcde0}</style>
+</head>
+<body>
+<h1>ICE HOCKEY LAKE:<br>FROZEN PAWS EDITION</h1>
+<p>HomelandAI Studios - browser prototype v0.3.0</p>
+<p id="status" role="status">Loading the game from this repository's local source files...</p>
+<pre id="details"></pre>
+<noscript>This game requires JavaScript and WebGL.</noscript>
+<script>
+(async () => {
+  try {
+    if (location.protocol === 'file:') {
+      throw new Error('Serve the complete repository with: python -m http.server 8000\nThen open http://localhost:8000\nOr run python tools/package_viverse.py and open dist/index.html.');
+    }
+    const files = ['head.html', 'error_bootstrap.html', 'roster.json', 'simulation.js', 'input.js', 'renderer.js', 'app.js'];
+    const parts = await Promise.all(files.map(async (file) => {
+      const response = await fetch(new URL('Source/' + file, location.href), {cache: 'no-store'});
+      if (!response.ok) throw new Error('Could not load Source/' + file + ' (HTTP ' + response.status + ').');
+      return response.text();
+    }));
+    JSON.parse(parts[2]);
+    // Preserve the original single-file runtime, including its strict-mode scope.
+    const html = parts[0] + parts[1] + '<script>\n(()=>{\n"use strict";\nwindow.FrozenPawsRoster=' + parts[2] + ';\n' + parts.slice(3).join('\n') + '\n})();\n</scr' + 'ipt>\n</body></html>';
+    document.open();
+    document.write(html);
+    document.close();
+  } catch (error) {
+    const status = document.getElementById('status');
+    const details = document.getElementById('details');
+    if (status) status.textContent = 'The game source could not be loaded.';
+    if (details) details.textContent = String(error.message || error);
+    console.error(error);
+  }
+})();
+</script>
+</body>
+</html>

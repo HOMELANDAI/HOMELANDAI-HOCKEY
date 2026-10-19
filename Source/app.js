@@ -51,7 +51,7 @@ function tone(kind){if(muted||!audioCtx||audioCtx.state!=='running')return;const
 window.addEventListener('keydown',e=>{
  if(['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)&&screen==='main')return;
  if(sim&&['Space','Tab','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code))e.preventDefault();
- if(e.code==='Space'&&sim&&screen==='none')shotInput.set('keyboard',true);keys.add(e.code);if(e.repeat)return;
+ keys.add(e.code);if(e.code==='Space'&&sim&&screen==='none')shotInput.set('keyboard',true);if(e.repeat)return;
  if(e.code==='Escape'||e.code==='KeyP'){if(screen==='help')closeHelp();else if(screen==='pause')resume();else if(sim&&screen==='none')pause();return;}
  if(!sim||screen!=='none')return;
  if(e.code==='KeyX')pending.quickShot=true;if(e.code==='KeyF')pending.pass=true;if(e.code==='Tab')pending.switchPlayer=true;if(e.code==='KeyC')pending.check=true;if(e.code==='KeyR'&&sim.training)nextAttempt();
